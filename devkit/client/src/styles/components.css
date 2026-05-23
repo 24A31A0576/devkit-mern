@@ -1,0 +1,44 @@
+/* ── Shared component styles that can be imported via CSS ── */
+
+/* Buttons */
+.btn { padding: 0.5rem 1.25rem; border-radius: var(--radius-sm); font-weight: 700; cursor: pointer; border: none; font-family: var(--font-display); transition: all 0.2s; display: inline-flex; align-items: center; gap: 0.4rem; }
+.btn-primary { background: var(--color-primary); color: #fff; }
+.btn-primary:hover { background: var(--color-primary-light); transform: translateY(-1px); }
+.btn-secondary { background: transparent; color: var(--color-text-muted); border: 1px solid var(--color-border); }
+.btn-secondary:hover { border-color: var(--color-primary); color: var(--color-text); }
+.btn-sm { padding: 0.3rem 0.75rem; font-size: 0.75rem; }
+.btn-lg { padding: 0.75rem 1.75rem; font-size: 1rem; }
+
+/* Badges */
+.badge { padding: 0.2rem 0.6rem; border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 700; display: inline-flex; align-items: center; }
+.badge-success { background: rgba(0,217,163,0.15); color: var(--color-accent-green); }
+.badge-warning { background: rgba(255,209,102,0.15); color: var(--color-accent-yellow); }
+.badge-error { background: rgba(255,68,68,0.15); color: #FF6B6B; }
+.badge-info { background: rgba(108,99,255,0.15); color: var(--color-primary-light); }
+
+/* Cards */
+.card { background: var(--color-card); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.25rem; }
+.card-hover:hover { transform: translateY(-3px); border-color: var(--color-primary); transition: all 0.2s; }
+
+/* Inputs */
+.input { background: var(--color-card); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 0.55rem 0.9rem; color: var(--color-text); font-size: 0.85rem; outline: none; transition: 0.2s; width: 100%; font-family: var(--font-display); }
+.input:focus { border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(108,99,255,0.15); }
+
+/* Alerts */
+.alert { display: flex; align-items: flex-start; gap: 0.6rem; padding: 0.75rem 1rem; border-radius: var(--radius-sm); font-size: 0.8rem; }
+.alert-success { background: rgba(0,217,163,0.08); border: 1px solid rgba(0,217,163,0.3); color: var(--color-accent-green); }
+.alert-error { background: rgba(255,68,68,0.08); border: 1px solid rgba(255,68,68,0.3); color: #FF6B6B; }
+.alert-warning { background: rgba(255,209,102,0.08); border: 1px solid rgba(255,209,102,0.3); color: var(--color-accent-yellow); }
+
+/* Progress */
+.progress { height: 8px; background: var(--color-border); border-radius: var(--radius-full); overflow: hidden; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, var(--color-primary), var(--color-accent-green)); border-radius: var(--radius-full); transition: width 0.4s ease; }
+
+/* Toggle */
+.toggle-wrap { display: flex; align-items: center; gap: 0.6rem; cursor: pointer; }
+.toggle { width: 44px; height: 24px; border-radius: 12px; position: relative; transition: 0.2s; }
+.toggle-off { background: var(--color-border); }
+.toggle-on { background: var(--color-primary); }
+.toggle-knob { position: absolute; top: 3px; width: 18px; height: 18px; border-radius: 50%; background: #fff; transition: 0.2s; }
+.toggle-knob-off { left: 3px; }
+.toggle-knob-on { left: 23px; }
